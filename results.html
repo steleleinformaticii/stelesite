@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Results — Stelele Informaticii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#F5C451"/></svg></span>
+      STELELE INFORMATICII
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="results.html" class="active">Results</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="rules.html">Rules</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <canvas id="starfield"></canvas>
+  <div class="page-hero-inner">
+    <span class="eyebrow"><span class="dot"></span> SCOREBOARD</span>
+    <h1>Results</h1>
+    <p class="lede">Live standings for both contest days, published as a spreadsheet during and after the event.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+
+    <div class="results-toolbar">
+      <p style="color:var(--muted); font-size:14.5px; max-width:520px;">The table below updates as scores are published. If it doesn't load, use the direct link.</p>
+      <a class="btn btn-ghost btn-small" href="https://docs.google.com/spreadsheets/d/1W33--sGGIOZ9vyJJNzpCjVl1BD_muxAXNxb2Ty2Es7U/edit?gid=803655104#gid=803655104" target="_blank" rel="noopener">Open full table ↗</a>
+    </div>
+
+    <div class="results-embed">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLZQHi8pLBVx4MWEjDT37hgZtSI71ti36GLMSLMTIEjui5MpPDUAjO3HRMAFIcXkvEEYRFU3ErgKCQ/pubhtml?gid=1774680311&amp;single=true&amp;widget=true&amp;headers=false" title="Stelele Informaticii results table" loading="lazy"></iframe>
+    </div>
+
+    <div class="callout" style="margin-top:32px;">
+      <span class="mark">i</span>
+      <p>Looking for a past year? Medal thresholds and full standings from previous editions live in the archive — check with the <a href="contact.html">organizers</a> if a link has moved.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="registration.html">Registration</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-credit">STELELE INFORMATICII — OCT 17–20</div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

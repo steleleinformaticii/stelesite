@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Schedule — Stelele Informaticii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#F5C451"/></svg></span>
+      STELELE INFORMATICII
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="results.html">Results</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="rules.html">Rules</a>
+      <a href="schedule.html" class="active">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <canvas id="starfield"></canvas>
+  <div class="page-hero-inner">
+    <span class="eyebrow"><span class="dot"></span> FOUR DAYS, POTIGRAFU &amp; ICHB</span>
+    <h1>Schedule</h1>
+    <p class="lede">Tentative and subject to change. All times are Bucharest, Romania (UTC+3).</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+
+    <div class="timeline">
+
+      <div class="timeline-day">
+        <span class="day-label">17 October</span>
+        <h3>Arrival Day</h3>
+        <div class="timeline-events">
+          <div class="timeline-event"><div class="time">All day</div><div class="what"><strong>Participant Arrivals</strong><span>Transport to Potigrafu as participants arrive</span></div></div>
+          <div class="timeline-event"><div class="time">17:00</div><div class="what"><strong>Transport back to Potigrafu</strong><span>From ICHB Pallady</span></div></div>
+          <div class="timeline-event"><div class="time">All day</div><div class="what"><strong>Sports &amp; Activities</strong><span>Various games and activities throughout the day</span></div></div>
+          <div class="timeline-event"><div class="time">19:00 – 20:00</div><div class="what"><strong>Dinner</strong><span>An evening meal to connect with everyone</span></div></div>
+        </div>
+      </div>
+
+      <div class="timeline-day">
+        <span class="day-label">18 October</span>
+        <h3>Contest Day 1</h3>
+        <div class="timeline-events">
+          <div class="timeline-event"><div class="time">07:00</div><div class="what"><strong>Wakeup</strong></div></div>
+          <div class="timeline-event"><div class="time">07:00 – 08:00</div><div class="what"><strong>Breakfast</strong></div></div>
+          <div class="timeline-event"><div class="time">08:00 – 09:00</div><div class="what"><strong>Transport to ICHB</strong></div></div>
+          <div class="timeline-event"><div class="time">09:00</div><div class="what"><strong>Registration Phase</strong><span>Orientation and materials handed out at reception</span></div></div>
+          <div class="timeline-event"><div class="time">09:30</div><div class="what"><strong>Enter Contest Halls</strong></div></div>
+          <div class="timeline-event"><div class="time">10:00 – 14:00</div><div class="what"><strong>Contest Day 1</strong><span>Snacks provided during the contest</span></div></div>
+          <div class="timeline-event"><div class="time">14:00 – 16:00</div><div class="what"><strong>Lunch</strong></div></div>
+          <div class="timeline-event"><div class="time">16:00</div><div class="what"><strong>Transport back to Potigrafu</strong></div></div>
+          <div class="timeline-event"><div class="time">16:00 – 19:00</div><div class="what"><strong>Games &amp; Activities</strong></div></div>
+          <div class="timeline-event"><div class="time">19:00 – 20:00</div><div class="what"><strong>Dinner</strong></div></div>
+        </div>
+      </div>
+
+      <div class="timeline-day">
+        <span class="day-label">19 October</span>
+        <h3>Contest Day 2</h3>
+        <div class="timeline-events">
+          <div class="timeline-event"><div class="time">07:00</div><div class="what"><strong>Wakeup</strong></div></div>
+          <div class="timeline-event"><div class="time">07:00 – 08:00</div><div class="what"><strong>Breakfast</strong></div></div>
+          <div class="timeline-event"><div class="time">08:00 – 09:00</div><div class="what"><strong>Transport</strong></div></div>
+          <div class="timeline-event"><div class="time">09:30</div><div class="what"><strong>Enter Contest Halls</strong></div></div>
+          <div class="timeline-event"><div class="time">10:00 – 14:00</div><div class="what"><strong>Contest Day 2</strong><span>Snacks provided during the contest</span></div></div>
+          <div class="timeline-event"><div class="time">14:00 – 15:00</div><div class="what"><strong>Lunch</strong></div></div>
+          <div class="timeline-event"><div class="time">15:00 – 17:30</div><div class="what"><strong>Editorials</strong></div></div>
+          <div class="timeline-event"><div class="time">17:30 – 19:00</div><div class="what"><strong>Closing Ceremony / Awarding</strong><span>Streamed live</span></div></div>
+          <div class="timeline-event"><div class="time">19:00</div><div class="what"><strong>Transport back to Potigrafu</strong></div></div>
+          <div class="timeline-event"><div class="time">19:00 – 20:00</div><div class="what"><strong>Dinner</strong></div></div>
+        </div>
+      </div>
+
+      <div class="timeline-day">
+        <span class="day-label">20 October</span>
+        <h3>Departure Day</h3>
+        <div class="timeline-events">
+          <div class="timeline-event"><div class="time">07:00 – 09:00</div><div class="what"><strong>Breakfast</strong><span>A farewell meal</span></div></div>
+          <div class="timeline-event"><div class="time">All day</div><div class="what"><strong>Sports &amp; Activities</strong><span>Games and activities until departure</span></div></div>
+          <div class="timeline-event"><div class="time">12:00 – 14:00</div><div class="what"><strong>Lunch</strong><span>Available for all participants before departure</span></div></div>
+          <div class="timeline-event"><div class="time">All day</div><div class="what"><strong>Departures</strong><span>Participants leave based on their arranged transport</span></div></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section tight">
+  <div class="container">
+    <span class="section-label">// ready?</span>
+    <h2>Ready to challenge yourself?</h2>
+    <p>Are you a junior who competes in national and international informatics competitions? Check the schedule above and join us for a contest designed to sharpen your skills and connect you with like-minded coders.</p>
+    <a class="btn btn-primary" href="registration.html">Rules &amp; Registration</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="registration.html">Registration</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-credit">STELELE INFORMATICII — OCT 17–20</div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

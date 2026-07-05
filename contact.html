@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Contact Us — Stelele Informaticii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#F5C451"/></svg></span>
+      STELELE INFORMATICII
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="results.html">Results</a>
+      <a href="tasks.html">Tasks</a>
+      <a href="rules.html">Rules</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <canvas id="starfield"></canvas>
+  <div class="page-hero-inner">
+    <span class="eyebrow"><span class="dot"></span> GET IN TOUCH</span>
+    <h1>Contact Us</h1>
+    <p class="lede">Got a question about registration, the tasks, or anything else? We're happy to help.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="contact-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:steleleinformaticii@ichb.ro">steleleinformaticii@ichb.ro</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div>
+            <div class="label">Address</div>
+            <div class="value">Str. Balta Albină, nr. 9, Sector 3, București</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div>
+            <div class="label">Response Time</div>
+            <div class="value">We usually reply within a few days — sooner as the contest gets closer.</div>
+          </div>
+        </div>
+        <p style="color:var(--muted); font-size:14.5px; margin-top:20px;">If you've got any questions or need help, just shoot us a message. We're happy to help!</p>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=Str.+Balta+Albina+9+Sector+3+Bucuresti&output=embed"
+          title="Map of ICHB, Str. Balta Albină nr. 9, Sector 3, București"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="registration.html">Registration</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-credit">STELELE INFORMATICII — OCT 17–20</div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
