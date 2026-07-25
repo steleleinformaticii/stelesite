@@ -154,7 +154,7 @@ h1.title{
   letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:3px;
   transition:all .2s ease; cursor:pointer; border:1px solid transparent;
 }
-.btn-primary{background:var(--phosphor); color:var(--void); font-weight:700;}
+.btn-primary{background:var(--phosphor); color:var(--void) !important; font-weight:700;}
 .btn-primary:hover{background:#98ffd2; transform:translateY(-1px);}
 .btn-ghost{border:1px solid var(--line); color:var(--text);}
 .btn-ghost:hover{border-color:var(--phosphor); color:var(--phosphor);}
