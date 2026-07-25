@@ -1,0 +1,39 @@
+# =====================================================================
+# Stelele Informaticii — legacy URL redirects for Netlify
+# Netlify serves clean URLs (e.g. /rules -> rules.html) automatically,
+# so this file only needs to handle the old indexed paths.
+# =====================================================================
+
+# old WordPress-style slugs -> current pages
+/rules-participation      /registration   301
+/tasks-2025                /tasks          301
+/schedule-2                 /schedule       301
+/about-us                    /about          301
+/contact-us                   /contact        301
+
+# /ro/ prefixed versions of the same old slugs
+/ro/rules-participation    /registration   301
+/ro/tasks-2025              /tasks          301
+/ro/schedule-2               /schedule       301
+/ro/about-us                   /about          301
+/ro/contact-us                   /contact        301
+/ro/rules                          /rules          301
+/ro/results                         /results        301
+
+# /ro/ prefixed versions matching current page names directly
+/ro/registration    /registration   301
+/ro/schedule          /schedule       301
+/ro/tasks               /tasks          301
+/ro/about                  /about          301
+/ro/contact                  /contact        301
+
+# Romanian-language slug that was actually indexed
+/ro/rezultate    /results   301
+
+# bare /ro/ -> home page
+/ro/    /   301
+/ro      /   301
+
+# catch-all: anything else under /ro/ falls back to the home page
+# (must stay last — Netlify uses the first matching rule)
+/ro/*    /   301

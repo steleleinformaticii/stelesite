@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Stelele Informaticii — Junior Informatics Contest</title>
+<meta name="description" content="Stelele Informaticii is a junior informatics contest for young coders from Romania and abroad, with dates to be announced. Compete, learn, and grow.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://steleleinformaticii.ichb.ro/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stelele Informaticii">
+<meta property="og:title" content="Stelele Informaticii — Junior Informatics Contest | Dates TBA">
+<meta property="og:description" content="Stelele Informaticii is a junior informatics contest for young coders from Romania and abroad, with dates to be announced. Compete, learn, and grow.">
+<meta property="og:url" content="https://steleleinformaticii.ichb.ro/">
+<meta property="og:image" content="https://steleleinformaticii.ichb.ro/assets/icons/favicon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stelele Informaticii — Junior Informatics Contest | Dates TBA">
+<meta name="twitter:description" content="Stelele Informaticii is a junior informatics contest for young coders from Romania and abroad, with dates to be announced. Compete, learn, and grow.">
+<meta name="twitter:image" content="https://steleleinformaticii.ichb.ro/assets/icons/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Stelele Informaticii",
+  "description": "A junior informatics contest for young coders from Romania and abroad, run by the International Computer High School of Bucharest (ICHB).",
+  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "International Computer High School of Bucharest (ICHB)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Str. Balta Albină, nr. 9, Sector 3",
+      "addressLocality": "Bucharest",
+      "addressCountry": "RO"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "International Computer High School of Bucharest",
+    "url": "https://steleleinformaticii.ichb.ro/"
+  }
+}
+</script>
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a class="brand" href="/">
+      <span class="glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#F5C451"/></svg></span>
+      STELELE INFORMATICII
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="/" class="active">Home</a>
+      <a href="/results">Results</a>
+      <a href="/tasks">Tasks</a>
+      <a href="/rules">Rules</a>
+      <a href="/schedule">Schedule</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="starfield"></canvas>
+  <div class="hero-inner">
+    <span class="eyebrow"><span class="dot"></span> JUNIOR INFORMATICS CONTEST — ROMANIA</span>
+    <h1 class="title">Stelele<br>Informaticii</h1>
+    <p class="subhead">Challenge your mind: compete, learn, and grow. Join young coders from across the country and abroad in a weekend of problem-solving, collaboration, and discovery.</p>
+    <div class="datestamp">DATES TBA<span class="cursor"></span></div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/registration">Rules &amp; Registration</a>
+      <a class="btn btn-ghost" href="#features">Explore the contest</a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="constellation">
+  <div class="container">
+    <span class="section-label">// what you'll find here</span>
+    <h2 class="section-title">Three reasons to show up</h2>
+    <p class="section-intro">Every contest maps to a few fixed points — sharpen your skills, measure yourself against the best, and enjoy the days between rounds.</p>
+
+    <div style="position:relative;">
+      <svg class="constellation-svg" viewBox="0 0 1000 260" preserveAspectRatio="none">
+        <path d="M 160 40 L 500 200 L 840 40"></path>
+        <circle cx="160" cy="40" r="4"></circle>
+        <circle cx="500" cy="200" r="4"></circle>
+        <circle cx="840" cy="40" r="4"></circle>
+      </svg>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-node"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M8 4L2 12L8 20M16 4L22 12L16 20"/></svg></div>
+          <h3>Informatics Mastery</h3>
+          <p>Sharpen your coding skills against a set of problems built to make you think harder than a normal contest day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-node"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg></div>
+          <h3>Compete with the Best</h3>
+          <p>Test your knowledge against top junior talent from Romania and abroad, on the same problem set, at the same time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-node"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg></div>
+          <h3>Fun &amp; Games</h3>
+          <p>Between rounds, enjoy sports and activities with fellow competitors — the contest is a weekend, not just a test.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dates" class="dates-section">
+  <div class="container">
+    <span class="section-label">// key dates</span>
+    <h2 class="section-title">Mark the calendar</h2>
+    <div class="log-grid">
+      <div class="log-entry">
+        <span class="tag">Registration</span>
+        <h3>Deadline: <span class="value">To Be Announced</span></h3>
+        <p>Open to both national and international participants. Check the <a href="/registration">registration page</a> for eligibility and the sign-up links before the deadline.</p>
+      </div>
+      <div class="log-entry">
+        <span class="tag">Contest</span>
+        <h3>Runs <span class="value">TBA</span></h3>
+        <p>The exact dates for this year's two competition days have not been announced yet — check back on the full <a href="/schedule">schedule</a> for arrival, rounds, and activities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mission">
+  <div class="container">
+    <span class="section-label">// our mission</span>
+    <h2 class="section-title">Passing on a passion for computer science</h2>
+    <p class="section-intro">We believe in fostering curiosity, creativity, and collaboration among young minds — laying the foundation for a future where technology is used for the greater good.</p>
+
+    <div class="mission-grid">
+      <div class="mission-card">
+        <span class="num">01</span>
+        <h3>Junior Focus</h3>
+        <p>Built specifically for junior-level students, giving them a supportive, engaging environment to explore informatics for the first time — or the tenth.</p>
+      </div>
+      <div class="mission-card">
+        <span class="num">02</span>
+        <h3>Passion for Computer Science</h3>
+        <p>We're driven by a deep love of computer science and its possibilities, and our goal is to spark that same passion in every participant.</p>
+      </div>
+      <div class="mission-card">
+        <span class="num">03</span>
+        <h3>Cooperation &amp; Friendship</h3>
+        <p>Beyond the scoreboard, the contest is a celebration of teamwork, mutual support, and the joy of learning together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="join" class="cta-section">
+  <div class="container">
+    <span class="section-label">// join us</span>
+    <h2>Join us on our journey</h2>
+    <p>Whether you're a student eager to dive into informatics, an educator nurturing young talent, or a supporter of STEM education — there's a place for you here. Explore, learn, and grow with us as we pave the way for a future where the bonds forged through shared passion last a lifetime.</p>
+    <a class="btn btn-primary" href="/registration">Rules &amp; Registration</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/registration">Registration</a>
+      <a href="/schedule">Schedule</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-credit">STELELE INFORMATICII — DATES TBA</div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+</body>
+</html>
