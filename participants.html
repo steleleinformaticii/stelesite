@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<title>Participants — Stelele Informaticii</title>
+<meta name="description" content="Teams and contestants registered for Stelele Informaticii, grouped by team. Over 80 national participants also compete.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://steleleinformaticii.ichb.ro/participants">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stelele Informaticii">
+<meta property="og:title" content="Participants — Stelele Informaticii">
+<meta property="og:description" content="Teams and contestants registered for Stelele Informaticii, grouped by team. Over 80 national participants also compete.">
+<meta property="og:url" content="https://steleleinformaticii.ichb.ro/participants">
+<meta property="og:image" content="https://steleleinformaticii.ichb.ro/assets/icons/favicon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Participants — Stelele Informaticii">
+<meta name="twitter:description" content="Teams and contestants registered for Stelele Informaticii, grouped by team. Over 80 national participants also compete.">
+<meta name="twitter:image" content="https://steleleinformaticii.ichb.ro/assets/icons/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<style>
+.stat-row{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:28px}
+.stat{flex:1 1 180px;border:1px solid rgba(245,196,81,.25);border-radius:12px;padding:18px 20px}
+.stat .num{font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:700;color:var(--star-gold,#F5C451);display:block}
+.stat .lbl{color:var(--muted);font-size:14px}
+.p-search{width:100%;max-width:420px;padding:12px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:transparent;color:inherit;font:inherit;margin-bottom:28px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.team-card{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px}
+.team-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.team-head h3{margin:0;font-size:18px}
+.country{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--star-gold,#F5C451);text-align:right}
+.leader{font-size:13.5px;color:var(--muted);margin-bottom:10px}
+.leader span{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-right:6px;color:var(--star-gold,#F5C451)}
+.team-card ul{list-style:none;margin:0;padding:0}
+.team-card li{padding:6px 0;border-top:1px solid rgba(255,255,255,.08)}
+#noResults{display:none;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav>
+    <a class="brand" href="/">
+      <span class="glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#F5C451"/></svg></span>
+      STELELE INFORMATICII
+    </a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/results">Results</a>
+      <a href="/tasks">Tasks</a>
+      <a href="/rules">Rules</a>
+      <a href="/registration">Registration</a>
+      <a href="/participants" class="active">Participants</a>
+      <a href="/schedule">Schedule</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <canvas id="starfield"></canvas>
+  <div class="page-hero-inner">
+    <span class="eyebrow"><span class="dot"></span> WHO'S COMPETING</span>
+    <h1>Participants</h1>
+    <p class="lede">Registered teams and contestants, grouped by team.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+
+    <div class="stat-row">
+      <div class="stat"><span class="num">80+</span><span class="lbl">national participants</span></div>
+      <div class="stat"><span class="num">34</span><span class="lbl">registered teams listed below</span></div>
+      <div class="stat"><span class="num">126</span><span class="lbl">internationalcontestants</span></div>
+    </div>
+
+    <div class="callout" style="margin-bottom:28px;">
+      <span class="mark">i</span>
+      <p>The list below shows teams registered so far and may change as registrations are finalized. The national participants are not listed individually here.</p>
+    </div>
+
+    <input class="p-search" id="search" type="search" placeholder="Search by name, team or country…" aria-label="Search participants">
+
+    <div class="team-grid" id="teams">
+<div class="team-card" data-search="armenia armenia 1  mamikon hambaryan vache kocharyan levon hayrapetyan hayk adamyan">
+  <div class="team-head"><h3>Armenia 1</h3></div>
+  <ul><li>Mamikon Hambaryan</li><li>Vache Kocharyan</li><li>Levon Hayrapetyan</li><li>Hayk Adamyan</li></ul>
+</div>
+<div class="team-card" data-search="armenia armenia 2  herbert khondkaryan arman poghosyan hovhannes gyulumyan andranik mkrtchyan">
+  <div class="team-head"><h3>Armenia 2</h3></div>
+  <ul><li>Herbert Khondkaryan</li><li>Arman Poghosyan</li><li>Hovhannes Gyulumyan</li><li>Andranik Mkrtchyan</li></ul>
+</div>
+<div class="team-card" data-search="azerbaijan azerbaijan  hasan suleymanov mahmud isali vagif abdullayev tunjay pashayev">
+  <div class="team-head"><h3>Azerbaijan</h3></div>
+  <ul><li>Hasan Suleymanov</li><li>Mahmud Isali</li><li>Vagif Abdullayev</li><li>Tunjay Pashayev</li></ul>
+</div>
+<div class="team-card" data-search="bangladesh bangladesh 1  aritro sarkar tahjibul islam robi pabon ahsan md tamzid alahi">
+  <div class="team-head"><h3>Bangladesh 1</h3></div>
+  <ul><li>Aritro Sarkar</li><li>Tahjibul Islam Robi</li><li>Pabon Ahsan</li><li>Md Tamzid Alahi</li></ul>
+</div>
+<div class="team-card" data-search="bangladesh bangladesh 2  m. fahim hossain">
+  <div class="team-head"><h3>Bangladesh 2</h3></div>
+  <ul><li>M. Fahim Hossain</li></ul>
+</div>
+<div class="team-card" data-search="bosnia and herzegovina bosnia and herzegovina 1  dilan tuzović faris varnica jovan žilić milan goranović">
+  <div class="team-head"><h3>Bosnia and Herzegovina 1</h3></div>
+  <ul><li>Dilan Tuzović</li><li>Faris Varnica</li><li>Jovan Žilić</li><li>Milan Goranović</li></ul>
+</div>
+<div class="team-card" data-search="bosnia and herzegovina bosnia and herzegovina 2  anđela šinik kristina broćeta mahir hodžić asaf jusufbašić">
+  <div class="team-head"><h3>Bosnia and Herzegovina 2</h3></div>
+  <ul><li>Anđela Šinik</li><li>Kristina Broćeta</li><li>Mahir Hodžić</li><li>Asaf Jusufbašić</li></ul>
+</div>
+<div class="team-card" data-search="bulgaria bulgaria  boris bobev aleksandar valchev damyan svobodnikov angel raev">
+  <div class="team-head"><h3>Bulgaria</h3></div>
+  <ul><li>Boris Bobev</li><li>Aleksandar Valchev</li><li>Damyan Svobodnikov</li><li>Angel Raev</li></ul>
+</div>
+<div class="team-card" data-search="bulgaria bulgaria a&amp;b  dimitar aleksandrov shapatov tihomir todorov ivanov antonio valeriev rahchev teodor kaloyanov bonev">
+  <div class="team-head"><h3>Bulgaria A&amp;B</h3></div>
+  <ul><li>Dimitar Aleksandrov Shapatov</li><li>Tihomir Todorov Ivanov</li><li>Antonio Valeriev Rahchev</li><li>Teodor Kaloyanov Bonev</li></ul>
+</div>
+<div class="team-card" data-search="canada tinyfold  ethan shen">
+  <div class="team-head"><h3>Tinyfold</h3></div>
+  <ul><li>Ethan Shen</li></ul>
+</div>
+<div class="team-card" data-search="cyprus cyprus  aleksis tsangaris andreas charalambides christoforos pittalis constantinos nicolas lioudakis">
+  <div class="team-head"><h3>Cyprus</h3></div>
+  <ul><li>Aleksis Tsangaris</li><li>Andreas Charalambides</li><li>Christoforos Pittalis</li><li>Constantinos Nicolas Lioudakis</li></ul>
+</div>
+<div class="team-card" data-search="georgia georgia 1  dimitri shengelia giorgi tsibadze natalia papashvili richard barbakadze">
+  <div class="team-head"><h3>Georgia 1</h3></div>
+  <ul><li>Dimitri Shengelia</li><li>Giorgi Tsibadze</li><li>Natalia Papashvili</li><li>Richard Barbakadze</li></ul>
+</div>
+<div class="team-card" data-search="georgia georgia 2  lizi pavliashvili giorgi tskitishvili davit gachechiladze nikolozi chalatashvili">
+  <div class="team-head"><h3>Georgia 2</h3></div>
+  <ul><li>Lizi Pavliashvili</li><li>Giorgi Tskitishvili</li><li>Davit Gachechiladze</li><li>Nikolozi Chalatashvili</li></ul>
+</div>
+<div class="team-card" data-search="greece greece  anna kotoula angelos tsoukalas panagiotis bampouris evangelos kontosfyris">
+  <div class="team-head"><h3>Greece</h3></div>
+  <ul><li>Anna Kotoula</li><li>Angelos Tsoukalas</li><li>Panagiotis Bampouris</li><li>Evangelos Kontosfyris</li></ul>
+</div>
+<div class="team-card" data-search="kazakhstan kazakhstan 1  alisher yelaman amir belgimbayev islam yermukhanov sanzhar zhangeldi">
+  <div class="team-head"><h3>Kazakhstan 1</h3></div>
+  <ul><li>Alisher Yelaman</li><li>Amir Belgimbayev</li><li>Islam Yermukhanov</li><li>Sanzhar Zhangeldi</li></ul>
+</div>
+<div class="team-card" data-search="kazakhstan kazakhstan 2  aruzhan baimukhambetova abdugani galymzhanuly azamat rakhimberdiyev nurdaulet lesbay">
+  <div class="team-head"><h3>Kazakhstan 2</h3></div>
+  <ul><li>Aruzhan Baimukhambetova</li><li>Abdugani Galymzhanuly</li><li>Azamat Rakhimberdiyev</li><li>Nurdaulet Lesbay</li></ul>
+</div>
+<div class="team-card" data-search="kyrgyzstan kyrgyzstan 1  emirkhan sydykbaev bekten abduvaliev gulzhigit kurbanbekov taalim turumbekov">
+  <div class="team-head"><h3>Kyrgyzstan 1</h3></div>
+  <ul><li>Emirkhan Sydykbaev</li><li>Bekten Abduvaliev</li><li>Gulzhigit Kurbanbekov</li><li>Taalim Turumbekov</li></ul>
+</div>
+<div class="team-card" data-search="kyrgyzstan kyrgyzstan 2  bekzhan osmonov aziret israilov atai omurbekov ainazik dzhusupova">
+  <div class="team-head"><h3>Kyrgyzstan 2</h3></div>
+  <ul><li>Bekzhan Osmonov</li><li>Aziret Israilov</li><li>Atai Omurbekov</li><li>Ainazik Dzhusupova</li></ul>
+</div>
+<div class="team-card" data-search="moldova moldova orizont  cristian pleșca victor roșca daniel kirillov magdalena stratan">
+  <div class="team-head"><h3>Moldova Orizont</h3></div>
+  <ul><li>Cristian Pleșca</li><li>Victor Roșca</li><li>Daniel Kirillov</li><li>Magdalena Stratan</li></ul>
+</div>
+<div class="team-card" data-search="north macedonia north macedonia  ian stevkov zoran ilijoski panche banskoliev jakov grujovski">
+  <div class="team-head"><h3>North Macedonia</h3></div>
+  <ul><li>Ian Stevkov</li><li>Zoran Ilijoski</li><li>Panche Banskoliev</li><li>Jakov Grujovski</li></ul>
+</div>
+<div class="team-card" data-search="romania romania 1  andrei nemțișor traian danciu vlad bondoc vlad ioan muntoiu">
+  <div class="team-head"><h3>Romania 1</h3></div>
+  <ul><li>Andrei Nemțișor</li><li>Traian Danciu</li><li>Vlad Bondoc</li><li>Vlad Ioan Muntoiu</li></ul>
+</div>
+<div class="team-card" data-search="romania romania 2  radu pipernea mara ioana păun mihaela teodora craciun">
+  <div class="team-head"><h3>Romania 2</h3></div>
+  <ul><li>Radu Pipernea</li><li>Mara Ioana Păun</li><li>Mihaela Teodora Craciun</li></ul>
+</div>
+<div class="team-card" data-search="saudi arabia saudi arabia 1  eyad emad alkhalifa ibrahim mohammed binhafeez abdulaziz rayyan alsagier ayat hussain alkhalifah">
+  <div class="team-head"><h3>Saudi Arabia 1</h3></div>
+  <ul><li>Eyad Emad Alkhalifa</li><li>Ibrahim Mohammed Binhafeez</li><li>Abdulaziz Rayyan Alsagier</li><li>Ayat Hussain Alkhalifah</li></ul>
+</div>
+<div class="team-card" data-search="saudi arabia saudi arabia 2  mohammed fahd alaswad mohammad khalid aladaili leen saeed alsaleb juana ibrahim aljohani">
+  <div class="team-head"><h3>Saudi Arabia 2</h3></div>
+  <ul><li>Mohammed Fahd Alaswad</li><li>Mohammad Khalid Aladaili</li><li>Leen Saeed Alsaleb</li><li>Juana Ibrahim Aljohani</li></ul>
+</div>
+<div class="team-card" data-search="serbia serbia  danilo atanasković nikola milošević nikola vidaković filip jandrić">
+  <div class="team-head"><h3>Serbia</h3></div>
+  <ul><li>Danilo Atanasković</li><li>Nikola Milošević</li><li>Nikola Vidaković</li><li>Filip Jandrić</li></ul>
+</div>
+<div class="team-card" data-search="turkmenistan baky tylla  mahri seyidova mahriban bayramova shamuhammet gadamov arslan yanybayev">
+  <div class="team-head"><h3>Baky Tylla</h3></div>
+  <ul><li>Mahri Seyidova</li><li>Mahriban Bayramova</li><li>Shamuhammet Gadamov</li><li>Arslan Yanybayev</li></ul>
+</div>
+<div class="team-card" data-search="turkmenistan baky tylla 2  osmanmuhammet annageldyyev sohbet ovezov seyityunus toylyyev abdykerim ataballyyev">
+  <div class="team-head"><h3>Baky Tylla 2</h3></div>
+  <ul><li>Osmanmuhammet Annageldyyev</li><li>Sohbet Ovezov</li><li>Seyityunus Toylyyev</li><li>Abdykerim Ataballyyev</li></ul>
+</div>
+<div class="team-card" data-search="türkiye türkiye  mahmut efe micozkadıoğlu zehra didar menteşoğlu mahir alp taşkın osman eymen karaoğulları">
+  <div class="team-head"><h3>Türkiye</h3></div>
+  <ul><li>Mahmut Efe Micozkadıoğlu</li><li>Zehra Didar Menteşoğlu</li><li>Mahir Alp Taşkın</li><li>Osman Eymen Karaoğulları</li></ul>
+</div>
+<div class="team-card" data-search="ukraine ukraine 1  benedykt kvasnytsya maksym bondarenko illia denysiuk denys ilienkov">
+  <div class="team-head"><h3>Ukraine 1</h3></div>
+  <ul><li>Benedykt Kvasnytsya</li><li>Maksym Bondarenko</li><li>Illia Denysiuk</li><li>Denys Ilienkov</li></ul>
+</div>
+<div class="team-card" data-search="ukraine ukraine 2  oleksii syvak oleksandr chernysh artem dzhavakhishvili leonid tuz">
+  <div class="team-head"><h3>Ukraine 2</h3></div>
+  <ul><li>Oleksii Syvak</li><li>Oleksandr Chernysh</li><li>Artem Dzhavakhishvili</li><li>Leonid Tuz</li></ul>
+</div>
+<div class="team-card" data-search="ukraine ukraine 3  oleksandr kohan illia yaroshuk yarema okseniuk olesia nyzhnyk">
+  <div class="team-head"><h3>Ukraine 3</h3></div>
+  <ul><li>Oleksandr Kohan</li><li>Illia Yaroshuk</li><li>Yarema Okseniuk</li><li>Olesia Nyzhnyk</li></ul>
+</div>
+<div class="team-card" data-search="united kingdom united kingdom  rebecca fairfax">
+  <div class="team-head"><h3>United Kingdom</h3></div>
+  <ul><li>Rebecca Fairfax</li></ul>
+</div>
+<div class="team-card" data-search="uzbekistan uzbekistan 1  humoyun abduraupov shahruz feruzovich erkinov muhammadaziz usmonov shahriyor baxtiyorov">
+  <div class="team-head"><h3>Uzbekistan 1</h3></div>
+  <ul><li>Humoyun Abduraupov</li><li>Shahruz Feruzovich Erkinov</li><li>Muhammadaziz Usmonov</li><li>Shahriyor Baxtiyorov</li></ul>
+</div>
+<div class="team-card" data-search="uzbekistan uzbekistan 2  temurbek ubaydullayev hojiakbar obidjonov erkin karimov durdona abdusattorova">
+  <div class="team-head"><h3>Uzbekistan 2</h3></div>
+  <ul><li>Temurbek Ubaydullayev</li><li>Hojiakbar Obidjonov</li><li>Erkin Karimov</li><li>Durdona Abdusattorova</li></ul>
+</div>
+    </div>
+    <p id="noResults">No participants match your search.</p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/registration">Registration</a>
+      <a href="/participants">Participants</a>
+      <a href="/schedule">Schedule</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="footer-credit">STELELE INFORMATICII — OCT 16–19</div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script>
+(function(){
+  var s=document.getElementById('search'),cards=document.querySelectorAll('.team-card'),none=document.getElementById('noResults');
+  s.addEventListener('input',function(){
+    var q=s.value.trim().toLowerCase(),shown=0;
+    cards.forEach(function(c){
+      var ok=!q||c.dataset.search.indexOf(q)!==-1;
+      c.style.display=ok?'':'none'; if(ok)shown++;
+    });
+    none.style.display=shown?'none':'block';
+  });
+})();
+</script>
+</body>
+</html>
